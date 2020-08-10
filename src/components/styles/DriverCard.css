@@ -1,0 +1,17 @@
+.Driver-Card-container {
+  margin: auto;
+  width: 90%;
+  background-color: #93bedf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  border-radius: 2rem;
+}
+
+.Driver-Card-container > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
