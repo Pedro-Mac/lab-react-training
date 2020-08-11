@@ -37,9 +37,9 @@ class Carousel extends React.Component {
     return (
       <div>
         <h1>Iteration 11</h1>
-        <button onClick={this.handleLeftClick}> Back </button>
+        <button onClick={this.handleLeftClick}> Previous </button>
         <img src={this.props.imgs[this.state.imageIndex]} alt="none" />
-        <button onClick={this.handleRightClick}> Forward </button>
+        <button onClick={this.handleRightClick}> Next </button>
       </div>
     );
   }

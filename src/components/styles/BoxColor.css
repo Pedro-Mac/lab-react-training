@@ -2,3 +2,17 @@
   width: 200px;
   height: 200px;
 }
+
+.NumberTable-Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NumberTable-Square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border: 2px solid;
+}

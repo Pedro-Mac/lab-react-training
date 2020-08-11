@@ -11,12 +11,16 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Facebook />
+
       <IdCard
         firstName="Juca"
         lastName="Sansao"
@@ -86,6 +90,9 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+
+      <NumbersTable limit={15} />
+      <NumbersTable limit={120} />
     </div>
   );
 }

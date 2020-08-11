@@ -24,7 +24,7 @@ class Dice extends Component {
     });
 
     setTimeout(() => {
-      let diceNumber = Math.floor(Math.random() * (pictures.length + 1));
+      let diceNumber = Math.floor(Math.random() * pictures.length);
       this.setState({
         image: pictures[diceNumber],
       });
