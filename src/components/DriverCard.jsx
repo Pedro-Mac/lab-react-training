@@ -3,17 +3,11 @@ import React from 'react';
 import './styles/DriverCard.css';
 
 const DriverCard = ({ name, rating, img, car }) => {
-  let emptyStars = '';
-  let filledStars = '';
+  let ratingStars = '';
+  const ratingValue = Math.round(rating);
 
-  for (let i = 0; i < Math.round(rating); i++) {
-    filledStars += '★';
-  }
-
-  rating < 0.5 ? (emptyStars = '☆') : (emptyStars = '');
-
-  for (let i = rating + 1; i < 5; i++) {
-    emptyStars += '☆';
+  for (let i = 0; i < 5; i++) {
+    i < ratingValue ? (ratingStars += '★') : (ratingStars += '☆');
   }
 
   return (
@@ -22,10 +16,7 @@ const DriverCard = ({ name, rating, img, car }) => {
       <img src={img} alt={name} />
       <div className="Driver-Info-container">
         <h3>{name}</h3>
-        <p>
-          {filledStars}
-          {emptyStars}
-        </p>
+        <p>{ratingStars}</p>
         <p>
           {car.model} - {car.licensePlate}
         </p>
