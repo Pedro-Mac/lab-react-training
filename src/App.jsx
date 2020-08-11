@@ -51,7 +51,12 @@ function App() {
         color="#c3e8bd"
       />
 
+      <Rating>0.4</Rating>
+      <Rating>0.5</Rating>
+      <Rating>1.5</Rating>
+      <Rating>2.59</Rating>
       <Rating>3.5</Rating>
+      <Rating>5</Rating>
 
       <DriverCard
         name="Dara Khosrowshahi"
